@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import TopMenu from "./components/TopMenu";
 import Productshow from "./components/Products/products";
+import Products from "./components/Products/products";
 import Contact from "./components/contact";
 import Landing from "./components/LandingPage";
 import "./App.css";
@@ -22,7 +23,7 @@ function App() {
         <h1>E-commerce Website</h1>
         <TopMenu />
         <Switch>
-          <Route path="/product" component={Productshow} />
+          <Route path="/product" component={Products} />
           <Route path="/contact" component={Contact} />
           <Route path="/login" component={Logging} />
           <Route path="/" exact component={Landing} />
